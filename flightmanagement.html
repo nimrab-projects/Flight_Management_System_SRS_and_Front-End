@@ -1,0 +1,50 @@
+<!-- flightmanagement.html -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flight Management</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Flight Management (Admin Only)</h1>
+  <form>
+    <input type="text" placeholder="Flight Number" required />
+    <input type="datetime-local" placeholder="Schedule Time" required />
+    <input type="text" placeholder="Aircraft ID" required />
+    <button>Add/Update Flight</button>
+    <button>Cancel Flight</button>
+  </form>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flight Management</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<main>
+  <div class="module-form">
+    <h2>Flight Management (Admin Only)</h2>
+    <form>
+      <label for="flight-number">Flight Number</label>
+      <input type="text" id="flight-number" placeholder="Enter Flight Number" required />
+
+      <label for="schedule-time">Schedule Time</label>
+      <input type="datetime-local" id="schedule-time" required />
+
+      <label for="aircraft-id">Aircraft ID</label>
+      <input type="text" id="aircraft-id" placeholder="Enter Aircraft ID" required />
+
+      <button type="submit">Add/Update Flight</button>
+      <button type="button">Cancel Flight</button>
+    </form>
+  </div>
+</main>
+</body>
+</html>

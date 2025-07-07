@@ -1,0 +1,38 @@
+<!-- register.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <form class="form">
+    <h2>Register</h2>
+
+    <label>Title:
+      <select required>
+        <option>Mr.</option>
+        <option>Ms.</option>
+        <option>Mrs.</option>
+      </select>
+    </label>
+
+    <label>First Name:<input type="text" required></label>
+    <label>Last Name:<input type="text" required></label>
+    <label>Email:<input type="email" required></label>
+    <label>Password:<input type="password" required></label>
+    <label>Date of Birth:<input type="date" required></label>
+    <label>Country:<input type="text" required></label>
+    <label>Preferred Language:<input type="text"></label>
+    <label>Country Code:<input type="text"></label>
+    <label>Mobile Number:<input type="tel" required></label>
+
+    <label>Already have a membership number?</label>
+    <label><input type="radio" name="member" value="yes"> Yes</label>
+    <label><input type="radio" name="member" value="no"> No</label>
+
+    <button type="submit">Register</button>
+  </form>
+</body>
+</html>

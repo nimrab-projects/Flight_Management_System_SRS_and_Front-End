@@ -1,0 +1,60 @@
+<!-- payment.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<main>
+  <div class="module-form">
+    <h2>Payment</h2>
+    <form action="#">
+      <label for="method">Payment Method</label>
+      <select id="method" name="method">
+        <option value="card">Credit/Debit Card</option>
+        <option value="bank">Bank Transfer</option>
+        <option value="wallet">Mobile Wallet</option>
+      </select>
+
+      <label for="card-number">Card Number</label>
+      <input type="text" id="card-number" name="card-number" placeholder="Enter card number">
+
+      <button type="submit">Proceed to Pay</button>
+    </form>
+  </div>
+</main>
+
+
+  <!-- <h1>Payment</h1>
+  <form id="paymentForm">
+    <label>Payment Method:</label><br />
+    <select required>
+      <option value="">--Select--</option>
+      <option value="card">Card</option>
+      <option value="bank">Bank Transfer</option>
+      <option value="wallet">Mobile Wallet</option>
+    </select><br /><br />
+
+    <label>Card/Account Number:</label><br />
+    <input type="text" required /><br /><br />
+
+    <label>Expiry Date:</label><br />
+    <input type="month" required /><br /><br />
+
+    <label>CVV/Code:</label><br />
+    <input type="password" required /><br /><br />
+
+    <button type="submit">Pay Now</button>
+    <button type="button">Hold My Fare</button>
+  </form>
+
+  <div id="confirmation" style="display:none;">
+    <h2>Booking Confirmed</h2>
+    <p>Reference Number: <strong>#ABC123</strong></p>
+    <button>Download E-ticket</button>
+  </div> -->
+</body>
+</html>

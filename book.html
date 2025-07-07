@@ -1,0 +1,36 @@
+<!-- book.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book a Flight</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <form class="form">
+    <h2>Search and Book a Flight</h2>
+
+    <label>Trip Type:
+      <select>
+        <option>Return</option>
+        <option>One Way</option>
+        <option>Multi-City</option>
+      </select>
+    </label>
+
+    <label>Departure Airport:<input type="text" required></label>
+    <label>Arrival Airport:<input type="text" required></label>
+    <label>Departure Date:<input type="date" required></label>
+    <label>Return Date:<input type="date"></label>
+    <label>Passengers:<input type="number" required></label>
+    <label>Travel Class:
+      <select>
+        <option>Economy</option>
+        <option>Business</option>
+      </select>
+    </label>
+
+    <button type="submit">Search Flights</button>
+  </form>
+</body>
+</html>

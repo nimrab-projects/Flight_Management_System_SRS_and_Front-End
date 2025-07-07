@@ -1,0 +1,650 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flight Management System</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Flight Management System (FMS)</h1>
+    <nav>
+      <ul>
+        <li><a href="#booking">Flight Booking</a></li>
+        <li><a href="#status">Flight Status</a></li>
+        <li><a href="#admin">Admin Login</a></li>
+        <li><a href="#support">Customer Support</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    <section id="booking" class="card">
+      <h2>Book a Flight</h2>
+      <form>
+        <label>From:
+          <input type="text" placeholder="Departure City" required />
+        </label>
+        <label>To:
+          <input type="text" placeholder="Arrival City" required />
+        </label>
+        <label>Date:
+          <input type="date" required />
+        </label>
+        <label>Class:
+          <select>
+            <option>Economy</option>
+            <option>Business</option>
+          </select>
+        </label>
+        <button type="submit">Search Flights</button>
+      </form>
+    </section>
+
+    <section id="status" class="card">
+      <h2>Check Flight Status</h2>
+      <form>
+        <label>Flight Number:
+          <input type="text" placeholder="e.g. PK123" />
+        </label>
+        <button type="submit">Check Status</button>
+      </form>
+    </section>
+
+    
+    <section id="admin" class="card">
+      <h2>Admin Login</h2>
+      <form>
+        <label>Email:
+          <input type="email" placeholder="admin@example.com" required />
+        </label>
+        <label>Password:
+          <input type="password" required />
+        </label>
+        <button type="submit">Login</button>
+      </form>
+    </section>
+
+  
+    <section id="support" class="card">
+      <h2>Customer Support</h2>
+      <form>
+        <label>Your Name:
+          <input type="text" required />
+        </label>
+        <label>Issue:
+          <textarea placeholder="Describe your issue here..." required></textarea>
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Flight Management System</p>
+  </footer>
+</body>
+</html> -->
+
+<!-- index.html -->
+
+<!-- index.html -->
+ <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Flight Management System</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Flight Management System</h1>
+    <nav>
+      <a href="register.html"><img src="images/register.png" alt="Register" class="icon">Join Now</a>
+      <a href="login.html"><img src="images/login.png" alt="Login" class="icon">Login</a>
+      <a href="book.html"><img src="images/book.png" alt="Book" class="icon">Book a Flight</a>
+      <a href="status.html"><img src="images/status.png" alt="Status" class="icon">Flight Status</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="images/flight-banner.jpg" alt="Flight Banner" class="banner">
+    <div class="hero-text">
+      <h2>Welcome to Your Travel Companion</h2>
+      <p>Book flights, check-in online, and get real-time updates — all in one place.</p>
+    </div>
+  </section>
+
+  <main class="features">
+    <div class="feature-card">
+      <img src="images/book.png" alt="Book Flight">
+      <h3>Book Your Trip</h3>
+      <p>Choose destinations, dates, and travel classes at your convenience.</p>
+    </div>
+    <div class="feature-card">
+      <img src="images/status.png" alt="Flight Status">
+      <h3>Track Flights</h3>
+      <p>Get real-time flight updates and route info instantly.</p>
+    </div>
+    <div class="feature-card">
+      <img src="images/register.png" alt="Register">
+      <h3>Easy Registration</h3>
+      <p>Sign up in a few steps and enjoy fast bookings and rewards.</p>
+    </div>
+    <div class="feature-card">
+      <img src="images/login.png" alt="Login">
+      <h3>Access Your Trips</h3>
+      <p>Log in and view your upcoming and past journeys anytime.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Flight Management System</p>
+  </footer>
+</body>
+</html>  -->
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Flight Management System</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f8fc;
+    }
+
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav img {
+      width: 18px;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+
+    .hero {
+      position: relative;
+      text-align: center;
+    }
+
+    .banner {
+      width: 100%;
+      height: auto;
+    }
+
+    .hero-text {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0, 0, 0, 0.5);
+      padding: 1.5rem 2rem;
+      border-radius: 10px;
+      color: white;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2rem;
+      gap: 2rem;
+      background-color: #e8f0fe;
+    }
+
+    .feature-card {
+      background: white;
+      padding: 1rem;
+      border-radius: 10px;
+      width: 250px;
+      text-align: center;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+
+    .feature-card img {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Flight Management System</h1>
+    <nav>
+      <a href="register.html"><img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Register">Join Now</a>
+      <a href="login.html"><img src="https://cdn-icons-png.flaticon.com/512/747/747545.png" alt="Login">Login</a>
+      <a href="book.html"><img src="https://cdn-icons-png.flaticon.com/512/860/860786.png" alt="Book">Book a Flight</a>
+      <a href="status.html"><img src="https://cdn-icons-png.flaticon.com/512/235/235861.png" alt="Status">Flight Status</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="https://images.unsplash.com/photo-1569154941061-e231b4725ef1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" height="200px" width="200px" alt="Flight Banner" class="banner">
+    <div class="hero-text">
+      <h2>Welcome to Your Travel Companion</h2>
+      <p>Book flights, check-in online, and get real-time updates — all in one place.</p>
+    </div>
+  </section>
+
+  <main class="features">
+    <div class="feature-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/860/860786.png" alt="Book Flight">
+      <h3>Book Your Trip</h3>
+      <p>Choose destinations, dates, and travel classes with ease.</p>
+    </div>
+    <div class="feature-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/235/235861.png" alt="Flight Status">
+      <h3>Track Flights</h3>
+      <p>Get real-time flight updates and track your journey.</p>
+    </div>
+    <div class="feature-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Register">
+      <h3>Easy Registration</h3>
+      <p>Create your account to enjoy quick bookings and benefits.</p>
+    </div>
+    <div class="feature-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/747/747545.png" alt="Login">
+      <h3>Access Your Trips</h3>
+      <p>View your upcoming and past bookings securely.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Flight Management System | Designed by Nimra</p>
+  </footer>
+</body>
+</html> 
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Flight Management System</title>
+   <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f8fc;
+    }
+
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      margin: 0 5px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav img {
+      width: 18px;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+
+    .hero {
+      position: relative;
+      text-align: center;
+    }
+
+    .banner {
+      width: 100%;
+      height: auto;
+    }
+
+    .hero-text {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0, 0, 0, 0.5);
+      padding: 1.5rem 2rem;
+      border-radius: 10px;
+      color: white;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2rem;
+      gap: 2rem;
+      background-color: #e8f0fe;
+    }
+
+    .feature-card {
+      background: white;
+      padding: 1rem;
+      border-radius: 10px;
+      width: 200px;
+      text-align: center;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+
+    .feature-card img {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Flight Management System</h1>
+    <nav>
+      <a href="register.html"><img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Register">Join Now</a>
+      <a href="login.html"><img src="https://cdn-icons-png.flaticon.com/512/747/747545.png" alt="Login">Login</a>
+      <a href="book.html"><img src="https://cdn-icons-png.flaticon.com/512/860/860786.png" alt="Book">Book a Flight</a>
+      <a href="status.html"><img src="https://cdn-icons-png.flaticon.com/512/235/235861.png" alt="Status">Flight Status</a>
+      <a href="payment.html"><img src="https://cdn-icons-png.flaticon.com/512/1040/1040230.png" alt="Payment">Payment</a>
+      <a href="baggagedetails.html"><img src="https://cdn-icons-png.flaticon.com/512/146/146148.png" alt="Baggage">Baggage</a>
+      <a href="weatherandemergencyalerts.html"><img src="https://cdn-icons-png.flaticon.com/512/869/869869.png" alt="Weather">Weather</a>
+      <a href="staffmanagement.html"><img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Staff">Staff</a>
+      <a href="flightmanagement.html"><img src="https://cdn-icons-png.flaticon.com/512/2306/2306154.png" alt="Flight">Manage Flights</a>
+      <a href="onlinecheckin.html"><img src="https://cdn-icons-png.flaticon.com/512/1973/1973833.png" alt="Check-in">Check-In</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="https://images.unsplash.com/photo-1569154941061-e231b4725ef1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" height="200px" width="200px" alt="Flight Banner" class="banner">
+    <div class="hero-text">
+      <h2>Welcome to Your Travel Companion</h2>
+      <p>Book flights, check-in online, and get real-time updates — all in one place.</p>
+    </div>
+  </section>
+
+  <main class="features">
+    <div class="feature-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/860/860786.png" alt="Book Flight">
+      <h3>Book Your Trip</h3>
+      <p>Choose destinations, dates, and travel classes with ease.</p>
+    </div>
+    <div class="feature-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/235/235861.png" alt="Flight Status">
+      <h3>Track Flights</h3>
+      <p>Get real-time flight updates and track your journey.</p>
+    </div>
+    <div class="feature-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Register">
+      <h3>Easy Registration</h3>
+      <p>Create your account to enjoy quick bookings and benefits.</p>
+    </div>
+    <div class="feature-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/747/747545.png" alt="Login">
+      <h3>Access Your Trips</h3>
+      <p>View your upcoming and past bookings securely.</p>
+    </div>
+    <div class="feature-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/1040/1040230.png" alt="Payment">
+      <h3>Secure Payment</h3>
+      <p>Pay via card, bank, or wallet and hold fare if needed.</p>
+    </div>
+    <div class="feature-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/146/146148.png" alt="Baggage">
+      <h3>Baggage Info</h3>
+      <p>Know your baggage limits before flying.</p>
+    </div>
+    <div class="feature-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/869/869869.png" alt="Weather">
+      <h3>Weather Alerts</h3>
+      <p>Check weather and airport emergencies.</p>
+    </div>
+    <div class="feature-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Staff">
+      <h3>Staff Management</h3>
+      <p>Admin can manage crew and ground staff records.</p>
+    </div>
+    <div class="feature-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/2306/2306154.png" alt="Flights">
+      <h3>Flight Manager</h3>
+      <p>Admins control flight details, crew, and schedule.</p>
+    </div>
+    <div class="feature-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/1973/1973833.png" alt="Check-in">
+      <h3>Online Check-In</h3>
+      <p>Pick a seat and get your boarding pass in advance.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Flight Management System | Designed by Nimra</p>
+  </footer>
+</body>
+</html>
+final modules -->
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flight Management System</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f9fc;
+    }
+
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background-color: #0066cc;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .card {
+      background: white;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      max-width: 600px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    form input, form select, form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.25rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      padding: 0.6rem 1.5rem;
+      background-color: #004080;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 2rem;
+      background-color: #eaf4ff;
+    }
+
+    .gallery img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    }
+
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Flight Management System (FMS)</h1>
+    <nav>
+      <ul>
+        <li><a href="#booking">Flight Booking</a></li>
+        <li><a href="#status">Flight Status</a></li>
+        <li><a href="#admin">Admin Login</a></li>
+        <li><a href="#support">Customer Support</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="booking" class="card">
+      <h2>Book a Flight</h2>
+      <form>
+        <label>From:
+          <input type="text" placeholder="Departure City" required />
+        </label>
+        <label>To:
+          <input type="text" placeholder="Arrival City" required />
+        </label>
+        <label>Date:
+          <input type="date" required />
+        </label>
+        <label>Class:
+          <select>
+            <option>Economy</option>
+            <option>Business</option>
+          </select>
+        </label>
+        <button type="submit">Search Flights</button>
+      </form>
+    </section>
+
+    <section id="status" class="card">
+      <h2>Check Flight Status</h2>
+      <form>
+        <label>Flight Number:
+          <input type="text" placeholder="e.g. PK123" />
+        </label>
+        <button type="submit">Check Status</button>
+      </form>
+    </section>
+
+    <section id="admin" class="card">
+      <h2>Admin Login</h2>
+      <form>
+        <label>Email:
+          <input type="email" placeholder="admin@example.com" required />
+        </label>
+        <label>Password:
+          <input type="password" required />
+        </label>
+        <button type="submit">Login</button>
+      </form>
+    </section>
+
+    <section id="support" class="card">
+      <h2>Customer Support</h2>
+      <form>
+        <label>Your Name:
+          <input type="text" required />
+        </label>
+        <label>Issue:
+          <textarea placeholder="Describe your issue here..." required></textarea>
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  
+  <section class="gallery">
+    <img src="https://images.unsplash.com/photo-1589391886640-b7a5c065afc5?auto=format&fit=crop&w=800&q=80" alt="Airplane in sunset">
+    <img src="https://images.unsplash.com/photo-1529088742291-07b507d29f4b?auto=format&fit=crop&w=800&q=80" alt="Runway airplane">
+    <img src="https://images.unsplash.com/photo-1605733511864-67f6a1e8cd3b?auto=format&fit=crop&w=800&q=80" alt="Cloud view airplane wing">
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Flight Management System</p>
+  </footer>
+</body>
+</html> -->

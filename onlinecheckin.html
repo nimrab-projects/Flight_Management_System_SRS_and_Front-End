@@ -1,0 +1,70 @@
+<!-- onlinecheckin.html -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Check-In</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Online Check-In</h1>
+  <form>
+    <label>Booking Reference:</label><br />
+    <input type="text" required /><br /><br />
+
+    <label>Select Seat:</label><br />
+    <select required>
+      <option value="">--Choose Seat--</option>
+      <option>Window</option>
+      <option>Aisle</option>
+      <option>Middle</option>
+    </select><br /><br />
+
+    <button type="submit">Check-In</button>
+  </form>
+  <div id="boardingPass" style="display:none">
+    <h2>Check-In Complete</h2>
+    <p>Your e-boarding pass is ready.</p>
+    <button>Download Boarding Pass</button>
+  </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Check-In</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<main>
+  <div class="module-form">
+    <h2>Online Check-In</h2>
+    <form action="#">
+      <label for="booking-ref">Booking Reference</label>
+      <input type="text" id="booking-ref" name="booking-ref" placeholder="Enter booking reference" required />
+
+      <label for="seat">Select Seat</label>
+      <select id="seat" name="seat" required>
+        <option value="">--Choose Seat--</option>
+        <option value="window">Window</option>
+        <option value="aisle">Aisle</option>
+        <option value="middle">Middle</option>
+      </select>
+
+      <button type="submit">Check-In</button>
+    </form>
+
+    <div id="boardingPass" style="display:none; margin-top: 20px;">
+      <h3>Check-In Complete</h3>
+      <p>Your e-boarding pass is ready.</p>
+      <button>Download Boarding Pass</button>
+    </div>
+  </div>
+</main>
+</body>
+</html>
+
